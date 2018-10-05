@@ -1,0 +1,6 @@
+[report]
+omit =
+    */.local/*
+
+show_missing = True
+

@@ -1,0 +1,12 @@
+language: python
+python:
+    - 2.7
+    - 3.5
+    - 3.6
+install:
+    - pip install -r requirements-test.txt
+before_script:
+    - export PYTHONPATH=$(pwd)
+script:
+    - flake8
+    - pytest tests
